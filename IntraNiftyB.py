@@ -27,8 +27,7 @@ import numpy as np
 
 plt.style.use('cyberpunk')
 
-bot = telepot.Bot('1356204823:AAHY1lxuINcDabR6mfrRYMP-ojd11IcYna8')
-chat_id = '1047135684'
+
 
 SymbolNS ='^NSEBANK'
 
@@ -389,11 +388,7 @@ Titls = str("Nifty Bank: ") + str(today) + str(" | ") + str (CloseV) + str(" ( "
 plt.title(Titls, fontsize = 30)
 #mplcyberpunk.make_lines_glow()
 
-df2 = pd.read_excel('99_TITLS.xlsx')
-df2['Heading'][1] = Titls
-df3 = df2
-#datatoexcel = pd.ExcelWriter('0000_Final_Final_Title.xlsx')
-df2.to_excel('0000_Final_Final_Title.xlsx')
+
 
 plt.savefig("04_ToDay_ChartB.png", facecolor=fig.get_facecolor())
 
